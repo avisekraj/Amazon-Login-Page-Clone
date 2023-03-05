@@ -17,7 +17,7 @@ require("../db/conn");
 const User = require("../model/userScheme");
 app.use(express.json());
 
-const PORT = process.env.PORT;
+
 
 app.get("/", (req, res) => {
   res.render('/index.html');
@@ -39,5 +39,5 @@ app.post("/login", async(req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`server is listening ON ${PORT}`);
+  console.log(`server is listening ON 8000`);
 });
